@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+  
+  <div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Anasayfa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" th:href="hakkimizda">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="iletisimForm">İletişim</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kategoriler
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Telefon</a></li>
+            <li><a class="dropdown-item" href="#">Elektronik</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Apple</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a th:href="@{/yeniUyeForm}" class="nav-link dropdown-toggle">Uye ol</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Ara">
+        <button class="btn btn-outline-success" type="submit">Ara</button>
+      </form>
+    </div>
+  </div>
+</nav>
+  <style>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+
+<div class="desc">
+Vizyon, Misyon ve Değerlerimiz
+Vizyonumuz
+“Yenilikçi” ve “Fark Yaratan” kaliteli ürün ve hizmetleriyle faaliyet gösterdiği coğrafyalarda liderliğini sürdürmek.
+
+Misyonumuz
+Yaygın satış kanallarıyla, sunduğu zengin ve kaliteli teknolojik ürün gamı ve kaliteli hizmetleriyle, müşterilerinin yanında olmak.
+
+Değerlerimiz
+Müşteri memnuniyetini ön planda tutan, etik kurallarının ve sosyal sorumluluklarının bilincinde, gelişime ve geliştirmeye açık, genç ve dinamik bir firmadır.
+
+Kalite Politikamız
+Sunduğumuz teknolojik ürün gamı ve hizmetlerle; müşteri memnuniyetini ön planda tutan, tedarikçilerle ilişkilerini sürekli geliştiren, çalışanlarının gelişimine önem veren, kalite yönetim sisteminin sürekliliğini ve etkinliğini modern yönetim tekniklerini uygulayarak sağlayan, ölçen ve iyileştiren, yeniliklere açık bir firmadır.
+ 
+Şikayet Yönetimi Politikamız
+Tüm etkileşim kanallarımızdan ulaşan şikayet ve talepleri, yasalar ve şirket kuralları çerçevesinde, gizliliğe önem vererek adil ve objektif olarak değerlendiren, böylelikle şikayet yönetim sistemini sürekli iyileştirerek müşteri memnuniyetini artıran bir firmadır.
+ Vizyon, Misyon ve Değerlerimiz
+Vizyonumuz
+“Yenilikçi” ve “Fark Yaratan” kaliteli ürün ve hizmetleriyle faaliyet gösterdiği coğrafyalarda liderliğini sürdürmek.
+
+Misyonumuz
+Yaygın satış kanallarıyla, sunduğu zengin ve kaliteli teknolojik ürün gamı ve kaliteli hizmetleriyle, müşterilerinin yanında olmak.
+
+Değerlerimiz
+Müşteri memnuniyetini ön planda tutan, etik kurallarının ve sosyal sorumluluklarının bilincinde, gelişime ve geliştirmeye açık, genç ve dinamik bir firmadır.
+
+Kalite Politikamız
+Sunduğumuz teknolojik ürün gamı ve hizmetlerle; müşteri memnuniyetini ön planda tutan, tedarikçilerle ilişkilerini sürekli geliştiren, çalışanlarının gelişimine önem veren, kalite yönetim sisteminin sürekliliğini ve etkinliğini modern yönetim tekniklerini uygulayarak sağlayan, ölçen ve iyileştiren, yeniliklere açık bir firmadır.
+ 
+Şikayet Yönetimi Politikamız
+Tüm etkileşim kanallarımızdan ulaşan şikayet ve talepleri, yasalar ve şirket kuralları çerçevesinde, gizliliğe önem vererek adil ve objektif olarak değerlendiren, böylel
+Vizyon, Misyon ve Değerlerimiz
+Vizyonumuz
+“Yenilikçi” ve “Fark Yaratan” kaliteli ürün ve hizmetleriyle faaliyet gösterdiği coğrafyalarda liderliğini sürdürmek.
+
+Misyonumuz
+Yaygın satış kanallarıyla, sunduğu zengin ve kaliteli teknolojik ürün gamı ve kaliteli hizmetleriyle, müşterilerinin yanında olmak.
+
+Değerlerimiz
+Müşteri memnuniyetini ön planda tutan, etik kurallarının ve sosyal sorumluluklarının bilincinde, gelişime ve geliştirmeye açık, genç ve dinamik bir firmadır.
+
+Kalite Politikamız
+Sunduğumuz teknolojik ürün gamı ve hizmetlerle; müşteri memnuniyetini ön planda tutan, tedarikçilerle ilişkilerini sürekli geliştiren, çalışanlarının gelişimine önem veren, kalite yönetim sisteminin sürekliliğini ve etkinliğini modern yönetim tekniklerini uygulayarak sağlayan, ölçen ve iyileştiren, yeniliklere açık bir firmadır.
+ 
+Şikayet Yönetimi Politikamız
+Tüm etkileşim kanallarımızdan ulaşan şikayet ve talepleri, yasalar ve şirket kuralları çerçevesinde, gizliliğe önem vererek adil ve objektif olarak değerlendiren, böylel
+ </div>
+ 
+ </div>
+</body>
+</html>

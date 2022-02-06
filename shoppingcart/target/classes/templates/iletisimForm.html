@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymelea.org">
+<head>
+<meta charset="UTF-8">
+<title>Müşteri Takip Sistemi</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Anasayfa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" th:href="hakkimizda">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" th:href="iletisimForm">İletişim</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kategoriler
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Telefon</a></li>
+            <li><a class="dropdown-item" href="#">Elektronik</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Apple</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a th:href="@{/yeniUyeForm}" class="nav-link dropdown-toggle">Uye ol</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Ara">
+        <button class="btn btn-outline-success" type="submit">Ara</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+      <h1>  İletişim Formu</h1>
+       <form action="#" th:action="@{/iletisim}" th:object="${iletisim}" method="POST">
+          <input type="text" th:field="*{ad}" placeholder="  Adıız"  class="form-control mb-4 col-4">
+           <input type="text" th:field="*{soyAd}" placeholder="  Soyadınız" class="form-control mb-4 col-4">
+            <input type="text" th:field="*{eMail}" placeholder="  Email Adresi" class="form-control mb-4 col-4">
+             <input type="text" th:field="*{cepTelefonu}" placeholder="    Adresi" class="form-control mb-4 col-4">
+              <input type="text" th:field="*{mesaj}" placeholder="  telefon no" class="form-control mb-4 col-4">
+           <button type="submit" class="btn btn-info col-2">İletişim Bilgileri Ekle</button>
+       </form>
+    </div>
+    
+    
+    </div>
+</body>
+</html>
